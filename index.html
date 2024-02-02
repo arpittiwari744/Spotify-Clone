@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="left">
+        <div class="upper">
+          <div class="close">
+            <img
+              width="90"
+              class="invert"
+              src="assets/svgs/logo.svg"
+              alt="logo"
+            />
+            <img
+              id="cross"
+              class="invert"
+              src="assets/svgs/close.svg"
+              alt="close"
+            />
+          </div>
+          <ul>
+            <li>
+              <img
+                class="invert"
+                src="assets/svgs/home.svg"
+                width="23"
+                alt="logo"
+              />Home
+            </li>
+            <li>
+              <img
+                class="invert"
+                src="assets/svgs/search.svg"
+                width="23"
+                alt="logo"
+              />Search
+            </li>
+          </ul>
+        </div>
+        <div class="lower">
+          <div class="align-center">
+            <img
+              class="invert"
+              src="assets/svgs/library.svg"
+              width="23"
+              alt="library"
+            />Your Library
+          </div>
+          <div class="songlist">
+            <div class="info">
+              <ul>
+                <!-- <li>
+                  <img
+                    class="invert"
+                    src="assets/svgs/music.svg"
+                    alt="musicimg"
+                  />
+                  My Playlists
+                </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="cookie">
+            Privacy policies | Cookies | Terms & Conditions
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="header flex">
+          <div class="nav">
+            <img
+              class="hamburger invert"
+              id="hamburger"
+              src="assets/svgs/hamburger.svg"
+              alt="hamburger"
+              onclick="toggleContainer()"
+            />
+            <img class="invert" src="assets/svgs/less.svg" alt="Previous" />
+            <img class="invert" src="assets/svgs/great.svg" alt="Forward" />
+          </div>
+          <div class="btns">
+            <button class="btn-sm">Sign up</button>
+            <button class="btn">Log in</button>
+          </div>
+        </div>
+        <div class="playlists">
+          <h1>Spotify Playlists</h1>
+          <div class="cardContainer">
+           
+          </div>
+        </div>
+        <div class="playbar invert">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+          <div class="volume">
+            <img src="assets/svgs/vol.svg" alt="volume" />
+            <input type="range" name="vol" />
+          </div>
+          <div class="songinfo invert"></div>
+          <img id="previous" src="assets/svgs/prev.svg" alt="previous" />
+          <img id="play" src="assets/svgs/play.svg" alt="play" />
+          <img id="next" src="assets/svgs/next.svg" alt="next" />
+          <div class="songtime invert"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
